@@ -33,6 +33,7 @@ setup(
     entry_points={
             'console_scripts': [
                 'Attach10xBarcodes = sctools.platform:TenXV2.attach_barcodes'
+                'Correct10xCellBarcodesHash = sctools.platform:TenXV2.simple_correct_cell_barcodes'
             ]
     },
     classifiers=CLASSIFIERS,

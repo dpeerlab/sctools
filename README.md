@@ -8,7 +8,7 @@ systems analyzing large biological datasets.
 git clone https://github.com/humancellatlas/sctools.git 
 cd sctools
 pip3 install .
-pytest # verify installation; run tests
+pytest  # verify installation; run tests
 ```
 
 ## sctools Package
@@ -39,10 +39,10 @@ fields as a lightweight, lazy-parsed python object.
 as a lightweight, lazy-parsed python object.
 
 
-### Viewing Test Coverage
-to calculate and view test coverage cd to the `sctools` directory and 
-type the following two commands to generate the report and open it in your web browser:
-```
-pytest --cov-report html:cov_html --cov=sctools
-open cov_html/index.html
-``` 
+-### Viewing Test Coverage		
+-to calculate and view test coverage cd to the `sctools` directory and 		
+-type the following two commands to generate the report and open it in your web browser:		
+-```		
+-pytest --cov-report html:cov_html --cov=sctools		
+-open cov_html/index.html		
+-``` 
