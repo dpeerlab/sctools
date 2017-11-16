@@ -39,10 +39,10 @@ fields as a lightweight, lazy-parsed python object.
 as a lightweight, lazy-parsed python object.
 
 
--### Viewing Test Coverage		
--to calculate and view test coverage cd to the `sctools` directory and 		
--type the following two commands to generate the report and open it in your web browser:		
--```		
+-### Viewing Test Coverage
+-to calculate and view test coverage cd to the `sctools` directory and
+-type the following two commands to generate the report and open it in your web browser:
+-```
 -pytest --cov-report html:cov_html --cov=sctools		
--open cov_html/index.html		
--``` 
+-open cov_html/index.html
+-```
