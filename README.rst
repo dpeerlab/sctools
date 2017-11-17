@@ -27,22 +27,28 @@ forward and forward index fastq file
 
 Main Package Classes
 --------------------
+
 1. **Platform**: an abstract class that defines a common data structure for different 3' sequencing
-formats. All algorithms and methods in this package that are designed to work on 3' sequencing data
-speak to this common data structure. Currently 10X_v2 is defined.
+   formats. All algorithms and methods in this package that are designed to work on 3' sequencing data
+   speak to this common data structure. Currently 10X_v2 is defined.
+
 2. **Reader**: a general iterator over arbitrarily zipped file(s) that is extended to work with common
-sequence formats like fastq (fastq.Reader) and gtf (gtf.Reader). We recommend using the pysam
-package for reading sam and bam files.
+   sequence formats like fastq (fastq.Reader) and gtf (gtf.Reader). We recommend using the pysam
+   package for reading sam and bam files.
+
 3. **TwoBit & ThreeBit** DNA encoders that store DNA in 2- and 3-bit form. 2-bit is smaller but
-randomizes "N" nucleotides. Both classes support fastq operations over common sequence tasks such
-as the calculation of GC content.
-3. **ObservedBarcodeSet & PriorBarcodeSet**: classes for analysis and comparison of sets of barcodes
-such as the cell barcodes used by 10X genomics. Supports operations like summarizing hamming
-distances and comparing observed sequence diversity to expected (normally uniform) diversity.
-4. **gtf.Reader & gtf.Record** GTF iterator and GTF record class that exposes the gtf
-fields as a lightweight, lazy-parsed python object.
-5. **fastq.Reader & fastq.Record** fastq reader and fastq record class that exposes the fastq fields
-as a lightweight, lazy-parsed python object.
+   randomizes "N" nucleotides. Both classes support fastq operations over common sequence tasks such
+   as the calculation of GC content.
+
+4. **ObservedBarcodeSet & PriorBarcodeSet**: classes for analysis and comparison of sets of barcodes
+   such as the cell barcodes used by 10X genomics. Supports operations like summarizing hamming
+   distances and comparing observed sequence diversity to expected (normally uniform) diversity.
+
+5. **gtf.Reader & gtf.Record** GTF iterator and GTF record class that exposes the gtf
+   fields as a lightweight, lazy-parsed python object.
+
+6. **fastq.Reader & fastq.Record** fastq reader and fastq record class that exposes the fastq fields
+   as a lightweight, lazy-parsed python object.
 
 
 Viewing Test Coverage
